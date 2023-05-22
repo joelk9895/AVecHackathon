@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Syne:wght@400;500;600;700;800&display=swap");
+
+.body {
+  background: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.title-holder {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-holder h1 {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #ffffff, #ffffffb0, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.title-holder svg {
+  width: 100%;
+  height: 100%;
+}
+.blob {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 1;
+  background: linear-gradient(to right, #d23232, #ffffffb0, #0e5b79);
+  filter: blur(50px);
+}
+.under {
+  z-index: 0;
+}
+.over {
+  z-index: 2;
+  opacity: 0.5;
+}
+.blobin1 {
+  top: 0;
+  left: 0;
+}
+.blobin2 {
+  top: 10%;
+  right: 0;
+}
+.blobin3 {
+  bottom: 0;
+  left: 30%;
+}
+.blob1 {
+  top: 0;
+  left: 0;
+}
+.blob2 {
+  top: 10%;
+  right: 0;
+}
+.blob3 {
+  bottom: 0;
+  left: 0;
+}
+.blob4 {
+  bottom: 10%;
+  right: 10%;
+}
+
+.body p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 60%;
+}
+#root {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.avec {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: pink;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #212121;
+}
+@media screen and (max-width: 760px) {
+  .body {
+    gap: 4rem;
+  }
+  .title-holder h1 {
+    font-size: 2rem;
+  }
+  .body p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+}
