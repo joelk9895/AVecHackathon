@@ -42,7 +42,12 @@
   border-radius: 50%;
   z-index: 1;
   background: linear-gradient(to right, #d23232, #ffffffb0, #0e5b79);
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -ms-filter: blur(50px);
   filter: blur(50px);
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
 .under {
   z-index: 0;
